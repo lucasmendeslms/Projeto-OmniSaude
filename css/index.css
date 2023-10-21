@@ -1,0 +1,121 @@
+/* Header */
+
+#header {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 100%;
+  padding: 0.70rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#profile {
+  border: 1px solid pink;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#photoContainer {
+  border: 5px double var(--orange-300);
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+
+#profile span {
+  display: block;
+  margin-top:  1rem;
+  border: 1px solid var(--gray-300);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+#navigation ul {
+  display: flex;
+  border: 4px double var(--gray-500);
+  width: 62rem;
+  padding: 2rem;
+  justify-content: space-around;
+}
+
+#navigation li {
+  padding: 1rem;
+  background: var(--gray-100);
+  border-radius: 5px;
+}
+
+button {
+  margin-left: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Main */
+
+/* Patients */
+
+.section {
+  margin: 3rem 0;
+  /* border: 0.5px solid var(--gray-300); */
+}
+
+.containerSection {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.sectionItems {
+  display: flex;
+  flex-direction: column;
+  max-width: 25rem;
+  max-height: 25rem;
+  min-width: 12.5rem;
+  border: 1px solid var(--orange-300);
+  border-radius: 5px;
+  background: beige;
+}
+
+.sectionItems img {
+  width: 100%;
+  height: auto;
+  background: blue;
+  border-radius: 5px 5px 0 0;
+}
+
+.sectionItems h2 {
+  background: beige;
+  border-radius: 0 0 5px 5px;
+  align-self: center;
+  padding: 5px;
+}
+
+/* News  */
+
+#news h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+#news p {
+  padding: 2rem;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+
+/* APAGAR */
+
+#patients .sectionItems:last-child {
+  display: none;
+}
+
+/* APAGAR  */
+
+
+
+

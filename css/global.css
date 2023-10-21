@@ -1,0 +1,41 @@
+:root {
+  --white: #ffffff;
+
+  --gray-100: #f9fafc;
+  --gray-200: #dedede;
+  --gray-300: #adadaf;
+  --gray-400: #737375;
+  --gray-500: #7b7b7d;
+  
+  
+  --orange-200: #f48121;
+  --orange-300: #e36903;
+
+  --green: #01994c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--gray-100);
+  color: var(--gray-300);
+}
+
+body, button {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
