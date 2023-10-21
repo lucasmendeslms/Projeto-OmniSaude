@@ -1,16 +1,17 @@
 /* Header */
 
 #header {
-  /* border: 1px solid red; */
   display: flex;
   width: 100%;
   padding: 0.70rem;
   align-items: center;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #profile {
-  border: 1px solid pink;
+  /* border: 1px solid var(--gray-300); */
+  border-radius: 5px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -34,31 +35,48 @@
 
 #navigation ul {
   display: flex;
-  border: 4px double var(--gray-500);
+  border-radius: 8px;
   width: 62rem;
   padding: 2rem;
   justify-content: space-around;
+  flex-wrap: wrap;
+  background: radial-gradient(var(--backgroundMenuColor));
 }
 
 #navigation li {
   padding: 1rem;
-  background: var(--gray-100);
   border-radius: 5px;
+  gap: 2rem;
 }
 
-button {
+header button {
   margin-left: 2rem;
   padding: 1rem;
   border-radius: 5px;
+  border-style: none;
+  color: var(--gray-500);
+  font-weight: bold;
+  background: linear-gradient(var(--backgroundExitButtonColor));
+  cursor: pointer;
+}
+
+header button:hover {
+  background: var(--orange-300);
+  color: var(--white);
 }
 
 /* Main */
 
-/* Patients */
-
 .section {
+  display: flex;
+  flex-direction: column;
   margin: 3rem 0;
-  /* border: 0.5px solid var(--gray-300); */
+  /* border: 0.5px solid var(--gray-300);   */
+}
+
+.section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .containerSection {
@@ -66,6 +84,7 @@ button {
   gap: 3rem;
   justify-content: space-around;
   padding: 2rem;
+  flex-wrap: wrap;
 }
 
 .sectionItems {
@@ -77,11 +96,13 @@ button {
   border: 1px solid var(--orange-300);
   border-radius: 5px;
   background: beige;
+  justify-content: flex-end;
+  cursor: pointer;
 }
 
 .sectionItems img {
   width: 100%;
-  height: auto;
+  height: 100%;
   background: blue;
   border-radius: 5px 5px 0 0;
 }
@@ -90,27 +111,86 @@ button {
   background: beige;
   border-radius: 0 0 5px 5px;
   align-self: center;
-  padding: 5px;
+  text-align: justify;
+  padding: 0.75rem;
+  font-size: 1.2rem;
+  color: var(--gray-500);
+  letter-spacing: -1.8px;
+  line-height: 1.5;
+}
+
+li:hover, li a:hover {
+  color: var(--orange-300);
+  font-weight: bold;
+}
+
+.sectionItems:hover {
+  border: 2px solid var(--green);
 }
 
 /* News  */
 
 #news h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
   text-align: center;
-  /* border: 1px solid red; */
+  color: var(--gray-400);
 }
 
 #news p {
   padding: 2rem;
   text-align: center;
-  /* border: 1px solid red; */
+  color: var(--gray-400)
+}
+
+/* Assistance */
+
+#assistance {
+  margin: 0;
+  padding-left: 2rem;
+  display: inline-block;
+}
+
+#assistance h1 {
+  color: var(--gray-400);
+  margin-bottom: 2.5rem;
+}
+
+#assistance ul {
+  font-size: 1.5rem;
+  padding-left: 2rem;
+}
+
+#assistance li {
+  margin: 1.5rem 0;
+  list-style: circle;
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  padding: 1rem 0;
+  background: var(white);
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+footer h1 {
+  color: var(--orange-300);
+  font-weight: bold;
 }
 
 /* APAGAR */
 
 #patients .sectionItems:last-child {
+  display: none;
+}
+
+.sectionItems:nth-child(4n) {
   display: none;
 }
 
