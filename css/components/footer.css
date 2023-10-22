@@ -1,0 +1,16 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+  padding: 1rem 0;
+  background: var(white);
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+footer h1 {
+  color: var(--orange-300);
+  font-weight: bold;
+}
