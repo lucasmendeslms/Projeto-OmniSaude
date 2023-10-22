@@ -53,10 +53,6 @@ export function Carousel() {
       galleryItems[currentGallery][currentItem].scrollIntoView({
         behavior: "smooth",
       });
-
-      console.log(currentItem, galleryItems[currentGallery][currentItem])
-      console.log(galleryItems[currentGallery][4])
-
     });
   });
 }
